@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BRICKWELL — кирпич ручной формовки. Премиальный облицовочный кирпич для фасадов, интерьеров и ландшафта. Производство, шоурум, объекты." />
+  <title>BRICKWELL — Кирпич ручной формовки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <img src="logo.png" alt="BRICKWELL" class="logo__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <span class="logo__fallback" style="display:none">
+          <span class="logo__mark">B</span>
+          <span class="logo__text">BRICKWELL</span>
+        </span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about">О нас</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#production">Производство</a>
+        <a href="#objects">Объекты</a>
+        <a href="#showroom">Шоурум</a>
+        <a href="#contact" class="nav__cta">Заявка</a>
+      </nav>
+      <a href="tel:+375290000000" class="header__phone">+375 (29) 000-00-00</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <video class="hero__video" autoplay muted loop playsinline poster="images/hero.jpg">
+        <source src="videos/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__content">
+      <p class="eyebrow">Кирпич ручной формовки</p>
+      <h1>BRICKWELL</h1>
+      <p class="hero__subtitle">Премиальный облицовочный кирпич с характером.<br />Каждый камень — уникальная текстура и цвет.</p>
+      <div class="hero__actions">
+        <a href="#catalog" class="btn btn--primary">Смотреть каталог</a>
+        <a href="#contact" class="btn btn--outline">Получить прайс</a>
+      </div>
+      <div class="hero__stats">
+        <div><strong>15+</strong><span>лет опыта</span></div>
+        <div><strong>40+</strong><span>оттенков</span></div>
+        <div><strong>200+</strong><span>объектов</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Далее">↓</a>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__text">
+        <p class="eyebrow">О компании</p>
+        <h2>Кирпич, который<br />не похож на другой</h2>
+        <p>BRICKWELL производит кирпич ручной формовки — материал с живой поверхностью, естественными сколами и глубиной цвета. Мы работаем для архитекторов, застройщиков и частных клиентов, которым важны характер фасада и тактильность.</p>
+        <ul class="checklist">
+          <li>Ручная формовка и естественный обжиг</li>
+          <li>Морозостойкость и долговечность</li>
+          <li>Индивидуальный подбор цвета и формата</li>
+          <li>Поставки по Беларуси и СНГ</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Консультация</a>
+      </div>
+      <div class="about__media">
+        <div class="about__img about__img--main">
+          <img src="images/about-1.jpg" alt="Кирпич BRICKWELL" loading="lazy" />
+        </div>
+        <div class="about__img about__img--second">
+          <img src="images/about-2.jpg" alt="Текстура кирпича" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog / Prices -->
+  <section class="section catalog" id="catalog">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Каталог и цены</p>
+        <h2>Линейки кирпича</h2>
+        <p class="section__lead">Цены указаны ориентировочно за 1 м². Точная стоимость зависит от формата, партии и логистики.</p>
+      </div>
+      <div class="catalog__grid">
+        <article class="card product">
+          <div class="product__img">
+            <img src="images/brick-classic.jpg" alt="Classic" loading="lazy" />
+            <span class="product__tag">Хит</span>
+          </div>
+          <div class="product__body">
+            <h3>Classic</h3>
+            <p>Классическая ручная формовка, тёплые терракотовые оттенки</p>
+            <div class="product__meta">
+              <span class="price">от 48 BYN / м²</span>
+              <span class="format">250×120×65</span>
+            </div>
+            <a href="#contact" class="btn btn--sm" data-product="Classic">Заказать</a>
+          </div>
+        </article>
+
+        <article class="card product">
+          <div class="product__img">
+            <img src="images/brick-loft.jpg" alt="Loft" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <h3>Loft</h3>
+            <p>Графитовые и угольные тона для современной архитектуры</p>
+            <div class="product__meta">
+              <span class="price">от 54 BYN / м²</span>
+              <span class="format">250×120×65</span>
+            </div>
+            <a href="#contact" class="btn btn--sm" data-product="Loft">Заказать</a>
+          </div>
+        </article>
+
+        <article class="card product">
+          <div class="product__img">
+            <img src="images/brick-sand.jpg" alt="Sand" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <h3>Sand</h3>
+            <p>Песочные и кремовые оттенки, мягкая фактура</p>
+            <div class="product__meta">
+              <span class="price">от 52 BYN / м²</span>
+              <span class="format">250×120×65</span>
+            </div>
+            <a href="#contact" class="btn btn--sm" data-product="Sand">Заказать</a>
+          </div>
+        </article>
+
+        <article class="card product">
+          <div class="product__img">
+            <img src="images/brick-antique.jpg" alt="Antique" loading="lazy" />
+            <span class="product__tag">Premium</span>
+          </div>
+          <div class="product__body">
+            <h3>Antique</h3>
+            <p>Эффект состаренного камня, глубокая неоднородность</p>
+            <div class="product__meta">
+              <span class="price">от 68 BYN / м²</span>
+              <span class="format">240×115×71</span>
+            </div>
+            <a href="#contact" class="btn btn--sm" data-product="Antique">Заказать</a>
+          </div>
+        </article>
+
+        <article class="card product">
+          <div class="product__img">
+            <img src="images/brick-long.jpg" alt="Long" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <h3>Long Format</h3>
+            <p>Удлинённый формат для выразительной кладки</p>
+            <div class="product__meta">
+              <span class="price">от 72 BYN / м²</span>
+              <span class="format">490×90×40</span>
+            </div>
+            <a href="#contact" class="btn btn--sm" data-product="Long Format">Заказать</a>
+          </div>
+        </article>
+
+        <article class="card product">
+          <div class="product__img">
+            <img src="images/brick-custom.jpg" alt="Custom" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <h3>Custom</h3>
+            <p>Индивидуальный цвет и формат под ваш проект</p>
+            <div class="product__meta">
+              <span class="price">по запросу</span>
+              <span class="format">любой</span>
+            </div>
+            <a href="#contact" class="btn btn--sm" data-product="Custom">Заказать</a>
+          </div>
+        </article>
+      </div>
+      <p class="catalog__note">* Цены актуальны на 2026 год. Для оптовых и проектных поставок — индивидуальные условия.</p>
+    </div>
+  </section>
+
+  <!-- Production -->
+  <section class="section production" id="production">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Производство</p>
+        <h2>От глины до готового камня</h2>
+      </div>
+      <div class="production__grid">
+        <div class="production__video">
+          <video controls poster="images/production.jpg" preload="metadata">
+            <source src="videos/production.mp4" type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+          </video>
+        </div>
+        <div class="production__steps">
+          <div class="step">
+            <span class="step__num">01</span>
+            <div>
+              <h4>Подбор глины</h4>
+              <p>Отбор сырья с нужными свойствами цвета и пластичности</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">02</span>
+            <div>
+              <h4>Ручная формовка</h4>
+              <p>Каждый кирпич формуется вручную — уникальная поверхность</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">03</span>
+            <div>
+              <h4>Сушка и обжиг</h4>
+              <p>Контролируемый обжиг для прочности и глубины оттенка</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__num">04</span>
+            <div>
+              <h4>Сортировка</h4>
+              <p>Отбор партии, упаковка и подготовка к отгрузке</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objects / Gallery -->
+  <section class="section objects" id="objects">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Реализованные объекты</p>
+        <h2>Архитектура с характером</h2>
+      </div>
+      <div class="gallery" id="gallery">
+        <button class="gallery__item" data-full="images/object-1.jpg">
+          <img src="images/object-1.jpg" alt="Объект 1" loading="lazy" />
+          <span>Частный дом, Минск</span>
+        </button>
+        <button class="gallery__item" data-full="images/object-2.jpg">
+          <img src="images/object-2.jpg" alt="Объект 2" loading="lazy" />
+          <span>Фасад коммерческого здания</span>
+        </button>
+        <button class="gallery__item" data-full="images/object-3.jpg">
+          <img src="images/object-3.jpg" alt="Объект 3" loading="lazy" />
+          <span>Интерьер лофт</span>
+        </button>
+        <button class="gallery__item" data-full="images/object-4.jpg">
+          <img src="images/object-4.jpg" alt="Объект 4" loading="lazy" />
+          <span>Загородный комплекс</span>
+        </button>
+        <button class="gallery__item" data-full="images/object-5.jpg">
+          <img src="images/object-5.jpg" alt="Объект 5" loading="lazy" />
+          <span>Реставрация</span>
+        </button>
+        <button class="gallery__item" data-full="images/object-6.jpg">
+          <img src="images/object-6.jpg" alt="Объект 6" loading="lazy" />
+          <span>Ландшафт и подпорные стены</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showroom -->
+  <section class="section showroom" id="showroom">
+    <div class="container showroom__grid">
+      <div class="showroom__text">
+        <p class="eyebrow">Шоурум</p>
+        <h2>Приезжайте посмотреть<br />и потрогать</h2>
+        <p>В шоуруме BRICKWELL представлены все линейки, образцы кладки и готовые решения. Поможем подобрать цвет под ваш проект и рассчитаем количество.</p>
+        <ul class="info-list">
+          <li><strong>Адрес:</strong> г. Минск, ул. Примерная, 1</li>
+          <li><strong>Часы:</strong> Пн–Пт 10:00–19:00, Сб 11:00–16:00</li>
+          <li><strong>Телефон:</strong> <a href="tel:+375290000000">+375 (29) 000-00-00</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Записаться в шоурум</a>
+      </div>
+      <div class="showroom__media">
+        <img src="images/showroom.jpg" alt="Шоурум BRICKWELL" loading="lazy" />
+        <video controls poster="images/showroom-video.jpg" preload="metadata">
+          <source src="videos/showroom.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <h2>Нужен расчёт под ваш фасад?</h2>
+      <p>Пришлите план или фото — подготовим смету и подбор цвета за 1 рабочий день</p>
+      <a href="#contact" class="btn btn--primary">Оставить заявку</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <p class="eyebrow">Контакты</p>
+        <h2>Оставьте заявку</h2>
+        <p>Мы свяжемся в течение рабочего дня. Заявки приходят сразу в Telegram.</p>
+        <div class="contact__channels">
+          <a href="tel:+375290000000" class="channel">📞 +375 (29) 000-00-00</a>
+          <a href="https://t.me/your_manager" class="channel" target="_blank" rel="noopener">✈️ Telegram</a>
+          <a href="mailto:info@brickwell.by" class="channel">✉ info@brickwell.by</a>
+        </div>
+      </div>
+      <form class="form card" id="leadForm">
+        <div class="form__row">
+          <label for="name">Имя *</label>
+          <input type="text" id="name" name="name" required placeholder="Как к вам обращаться" />
+        </div>
+        <div class="form__row">
+          <label for="phone">Телефон *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+375 (__ ) ___-__-__" />
+        </div>
+        <div class="form__row">
+          <label for="product">Интересует</label>
+          <select id="product" name="product">
+            <option value="">Выберите линейку</option>
+            <option>Classic</option>
+            <option>Loft</option>
+            <option>Sand</option>
+            <option>Antique</option>
+            <option>Long Format</option>
+            <option>Custom / под проект</option>
+            <option>Визит в шоурум</option>
+            <option>Прайс-лист</option>
+          </select>
+        </div>
+        <div class="form__row">
+          <label for="message">Комментарий</label>
+          <textarea id="message" name="message" rows="4" placeholder="Площадь фасада, город, сроки…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Отправить в Telegram</button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+        <div class="form__status" id="formStatus" hidden></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__mark">B</span>
+        <span>BRICKWELL</span>
+        <p>Кирпич ручной формовки</p>
+      </div>
+      <div class="footer__links">
+        <a href="#catalog">Каталог</a>
+        <a href="#objects">Объекты</a>
+        <a href="#showroom">Шоурум</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <div class="footer__copy">
+        <p>© 2026 BRICKWELL. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <img src="" alt="" id="lightboxImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
