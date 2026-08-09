@@ -21,8 +21,8 @@ brickwell/
 **images/**
 - `hero.jpg` — обложка hero (если нет видео)
 - `about-1.jpg`, `about-2.jpg`
-- `brick-simple.jpg`, `brick-traditional.jpg`, `brick-classic.jpg`
-- `brick-loft.jpg`, `brick-ancient.jpg`, `brick-maestro.jpg`
+- `brick-classic.jpg`, `brick-loft.jpg`, `brick-sand.jpg`
+- `brick-antique.jpg`, `brick-long.jpg`, `brick-custom.jpg`
 - `object-1.jpg` … `object-6.jpg`
 - `showroom.jpg`, `showroom-video.jpg`, `production.jpg`
 
