@@ -10,8 +10,8 @@
   // 2) Напишите боту любое сообщение
   // 3) Узнайте chat_id: https://api.telegram.org/bot<TOKEN>/getUpdates
   // 4) Вставьте ниже:
-  const TELEGRAM_BOT_TOKEN = "PASTE_BOT_TOKEN_HERE";
-  const TELEGRAM_CHAT_ID = "PASTE_CHAT_ID_HERE";
+  const TELEGRAM_BOT_TOKEN = "8518391253:AAFtCpacmYR8MXNgfjezd8gRNw_okWlapGU";
+  const TELEGRAM_CHAT_ID = "505965455";
   // =====================================
 
   const header = document.getElementById("header");
